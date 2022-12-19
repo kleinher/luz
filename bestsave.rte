@@ -1,0 +1,253 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00004 
+   (rule
+   )
+   (wire (path BOT 88900  10922000 2159000 10922000 2349500 10985500 2349500
+     10985500 3810000 10236200 3810000)
+    (connect (terminal pin "DIODO RELE"-0) (terminal pin "TRANSISTOR RELE"-2))
+   )
+   (wire (path TOP 88900  10236200 3810000 10236200 3619500 9398000 3619500
+     9398000 2984500)
+    (connect (terminal pin "TRANSISTOR RELE"-2) (terminal pin RELE-1))
+   )
+   )
+   (Net #00005 
+   (rule
+   )
+   (wire (path BOT 88900  10033000 3810000 10033000 4127500 8382000 4127500
+     8382000 -889000)
+    (connect (terminal pin "TRANSISTOR RELE"-1) (terminal pin "RESISTENCIA RELE"-1))
+   )
+   )
+   (Net #00037 
+   (rule
+   )
+   (wire (path TOP 88900  10223500 254000 10795000 254000 10795000 812800)
+    (connect (terminal pin RELE1-1) (terminal pin TRANSISTOR1-2))
+   )
+   (wire (path BOT 88900  10922000 1651000 10922000 1397000 10985500 1397000
+     10985500 812800 10795000 812800)
+    (connect (terminal pin DIODO1-0) (terminal pin TRANSISTOR1-2))
+   )
+   )
+   (Net #00038 
+   (rule
+   )
+   (wire (path BOT 88900  10795000 1016000 10604500 1016000 10604500 -444500
+     10922000 -444500 10922000 -889000)
+    (connect (terminal pin TRANSISTOR1-1) (terminal pin RESISTENCIA1-1))
+   )
+   )
+   (Net +12V 
+   (rule
+   )
+   (wire (path TOP 88900  8636000 2984500 7048500 2984500 7048500 3175000
+     6604000 3175000)
+    (connect (terminal pin RELE-0) (terminal pin "DRIVER 12V"-8))
+   )
+   (wire (path TOP 88900  10043000 2794000 9652000 2794000 9652000 2730500
+     9144000 2730500 9144000 2984500 8636000 2984500)
+    (connect (terminal pin J1-2) (terminal pin RELE-0))
+   )
+   (wire (path BOT 88900  10043000 2794000 10043000 2349500 10160000 2349500
+     10160000 2159000)
+    (connect (terminal pin J1-2) (terminal pin "DIODO RELE"-1))
+   )
+   (wire (path BOT 88900  10223500 1016000 10223500 1270000 10160000 1270000
+     10160000 1651000)
+    (connect (terminal pin RELE1-0) (terminal pin DIODO1-1))
+   )
+   (wire (path BOT 88900  10160000 2159000 10160000 1651000)
+    (connect (terminal pin "DIODO RELE"-1) (terminal pin DIODO1-1))
+   )
+   )
+   (Net B 
+   (rule
+   )
+   (wire (path TOP 88900  7493000 2667000 7493000 2413000 7556500 2413000
+     7556500 1778000 6350000 1778000 6350000 2159000)
+    (connect (terminal pin "ENCHUFE TIRA"-2) (terminal pin WEMOS-4))
+   )
+   )
+   (Net FASE 
+   (rule
+   )
+   (wire (path BOT 88900  8636000 1714500 8636000 1016000 8953500 1016000)
+    (connect (terminal pin RELE-3) (terminal pin RELE1-3))
+   )
+   )
+   (Net G 
+   (rule
+   )
+   (wire (path BOT 88900  6604000 2159000 6604000 1905000 7747000 1905000
+     7747000 2667000)
+    (connect (terminal pin WEMOS-3) (terminal pin "ENCHUFE TIRA"-1))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path TOP 88900  6604000 2794000 6604000 2857500 8318500 2857500
+     8318500 2667000)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path TOP 88900  8318500 2667000 8191500 2667000)
+    (connect (terminal wire) (terminal via))
+   )
+   (wire (path BOT 88900  6604000 2413000 6604000 2794000)
+    (connect (terminal pin "DRIVER 12V"-7) (terminal via))
+   )
+   (wire (path BOT 88900  9829800 3810000 9829800 3274000 10343000 3274000)
+    (connect (terminal pin "TRANSISTOR RELE"-0) (terminal pin J1-0))
+   )
+   (wire (path BOT 88900  10668000 2794000 10668000 1397000 10795000 1397000
+     10795000 1219200)
+    (connect (terminal pin J1-1) (terminal pin TRANSISTOR1-0))
+   )
+   (wire (path BOT 88900  10343000 3274000 10668000 3274000 10668000 2794000)
+    (connect (terminal pin J1-0) (terminal pin J1-1))
+   )
+   (wire (path TOP 88900  8509000 2667000 8318500 2667000)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path BOT 88900  8191500 2667000 8191500 1651000 5842000 1651000
+     5842000 2159000)
+    (connect (terminal via) (terminal pin WEMOS-6))
+   )
+   (wire (path BOT 88900  9829800 3810000 8890000 3810000 8890000 2667000
+     8509000 2667000)
+    (connect (terminal pin "TRANSISTOR RELE"-0) (terminal via))
+   )
+   (via $VIA#0_POWER 6604000 2794000)
+   (via $VIA#0_POWER 8191500 2667000)
+   (via $VIA#0_POWER 8509000 2667000)
+   )
+   (Net LED 
+   (rule
+   )
+   (wire (path TOP 88900  6096000 2159000 6096000 1841500 4826000 1841500
+     4826000 2413000)
+    (connect (terminal pin WEMOS-5) (terminal pin "DRIVER 12V"-0))
+   )
+   )
+   (Net LUZ 
+   (rule
+   )
+   (wire (path BOT 88900  9398000 1460500 9398000 254000 8699500 254000)
+    (connect (terminal pin RELE-2) (terminal pin RELE1-2))
+   )
+   )
+   (Net MOVIMIENTO 
+   (rule
+   )
+   )
+   (Net R 
+   (rule
+   )
+   (wire (path BOT 88900  8001000 2667000 8001000 2857500 6858000 2857500
+     6858000 2159000)
+    (connect (terminal pin "ENCHUFE TIRA"-0) (terminal pin WEMOS-2))
+   )
+   )
+   (Net RELE 
+   (rule
+   )
+   (wire (path BOT 88900  6858000 -127000 6858000 -889000 7366000 -889000)
+    (connect (terminal pin WEMOS-13) (terminal pin "RESISTENCIA RELE"-0))
+   )
+   )
+   (Net RELE_2 
+   (rule
+   )
+   (wire (path TOP 88900  6350000 -127000 6350000 -698500 9906000 -698500
+     9906000 -889000)
+    (connect (terminal pin WEMOS-11) (terminal pin RESISTENCIA1-0))
+   )
+   )
+   (Net "TENSION LED" 
+   (rule
+   )
+   (wire (path TOP 88900  7239000 2667000 4826000 2667000 4826000 3175000)
+    (connect (terminal pin "ENCHUFE TIRA"-3) (terminal pin "DRIVER 12V"-15))
+   )
+   )
+  )
+ )
